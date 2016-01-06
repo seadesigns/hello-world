@@ -1,5 +1,6 @@
 body{
-	background-color: #ffffff;
+	background-color: #e9dfd1;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 ul{
@@ -17,31 +18,32 @@ li{
 	
 }
 li>a{
-	color:#500d6d;
+	color:#000000; /*500d6d*/
 	font-weight:bold;
 }
 li>a:hover,
 li>a:active{
-	color: #901ec1;
+	color: #ffffff; /*901ec1*/
 }
 .nav{
-	background-color:#b478ce;
+	background-color:#93601D;
 	width:100%;
 	height:30px;
 	display:block;
 	margin:auto;
 	margin-left:auto;
 	margin-right:auto;
-	border:1px solid #FFFFFF;
+	/*border:1px solid #FFFFFF;*/
 	
-	 background: -webkit-linear-gradient(#eacef6, #b478ce); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#eacef6, #b478ce); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#eacef6, #b478ce); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#eacef6, #b478ce); /* Standard syntax */
+  background: -webkit-linear-gradient(#E8B97C, #93601D); /* For Safari 5.1 to 6.0  eacef6, b478ce*/
+  background: -o-linear-gradient(#E8B97C, #93601D); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#E8B97C, #93601D); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#E8B97C, #93601D); /* Standard syntax */
 }
 
 .header{
-	background-color:#000000;
+	/*background-color:#000000;*/
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 .header .headercontent>a>p{
 	color:#FFFFFF;
@@ -51,15 +53,24 @@ li>a:active{
 	margin-left:10px;
 	
 }
+.headercontent img{
+	
+	max-height: 350px;
+	max-width: 350px;
+	width:auto;
+	height: auto;
+	margin-left: 5px;
+}
 .header .headercontent .info>h1>a{
-	color:#FFFFFF;
+	color:#000000;
 	text-decoration:none;
 }
 .header .info{
 	font-size:8px;
 	display:inline-block;
 	float:right;
-	color:#FFFFFF;
+	color:#000000;
+	margin: 10px;
 }
 
 
@@ -70,8 +81,9 @@ li>a:active{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	height:500px;
-	padding-bottom: 20px;
+	height:450px;
+	
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 .ghost-button{
@@ -89,6 +101,16 @@ li>a:active{
 .ghost-button:active{
 	background-color:#fff;
 	color:#000;
+}
+
+
+.footer img{
+	border-radius: 400px;
+	-webkit-border-radius: 400px;
+	-moz-border-radius: 400px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 .footer .about{
 	display:inline-block;
@@ -125,12 +147,13 @@ li>a:active{
 }
 .hook-dis{
 position:absolute;
+
 top:200px;
 left: 10px;
-width:40%;
+width:400px;
 color:#fff;
 font-size: 20px;
-padding:0px 0px 0px 50px;
+padding:50px 0px 0px 50px;
 
 }
 
@@ -142,8 +165,50 @@ button{
 	float:right;
 	margin:5px;
 }
+
+
 .footer{
 	margin-top:20px;
+	position:relative;	
+	/*background-color: blue;*/
+}
+
+.footerCredits{
+	color: #000;
+	font-weight:bold;
+	margin-top: -17px;
+	background-color:#93601D;
+	position:relative;
+	
+  background: -webkit-linear-gradient(#E8B97C, #93601D); /* For Safari 5.1 to 6.0  eacef6, b478ce*/
+  background: -o-linear-gradient(#E8B97C, #93601D); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#E8B97C, #93601D); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#E8B97C, #93601D); /* Standard syntax */
+}
+
+.footerCredits>p{
+	text-align: right;
+	padding: 5%;
+}
+
+.footerCredits>p>a{
+	color: #754c17;
+}
+
+.footer:after{
+	background: linear-gradient(-45deg, #E8B97C 13px, transparent 0), linear-gradient(45deg, #E8B97C 13px, transparent 0);
+        /*background-position: left-bottom;*/
+       
+        background-repeat: repeat-x;
+        background-size: 32px 32px;
+        content: " ";
+        display: block;
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 30px;
+        
 }
 
 /*****CONTACT PAGE*****/
@@ -194,14 +259,19 @@ textarea{
 /*****ABout page*****/
 .aboutSection{
 	display:inline-block;
-	float:left;
+	float:right;
 	border:2px solid #000000;
 	width:60%;
 }
 .aboutAside{
 	display:inline-block;
-	float:right;
+	float:left;
 	border:2px solid #000000;
+}
+
+.aboutAside img{
+	border-radius: 200px; 
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 /******SERVICE PAGE******/
 
